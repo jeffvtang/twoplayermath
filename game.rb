@@ -24,20 +24,22 @@ class Game
 
   response = q.input
 
-if q.answer(response)
+if q.answer?(response)
   puts "Correct"
 else
   puts "Incorrect"
   current_player.lose_life
+  puts current_player.summary
 end
   # asks question + player responds
-  
+
   # summary of standing
   # rotates to next turn
 
   @turn_manager.next
 
     end
+    puts "Game over"
   end
 
   def game_over?

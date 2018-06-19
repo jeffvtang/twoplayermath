@@ -17,6 +17,6 @@ class Player
   end
 
   def summary
-    "#{name}: #{current_lives}/#{max_lives}"
+    "#{@name}: #{@current_lives}/#{@max_lives}"
   end
 end
