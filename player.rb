@@ -1,6 +1,6 @@
 class Player
 
-  attr_reader :current_lives, :name
+  attr_reader :current_lives, :name, :summary
 
   def initialize(name)
     @name = name
@@ -13,7 +13,7 @@ class Player
   end
 
   def lost?
-    @current_lives = 0
+    @current_lives == 0
   end
 
   def summary
